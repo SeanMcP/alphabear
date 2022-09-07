@@ -1,25 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>APP_NAME</title>
-    <meta name="description" content="SHORT_DESCRIPTION" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📦</text></svg>"
-    />
-    <link rel="stylesheet" href="styles.scss" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alphabear</title>
+  <meta name="description" content="A simple tool to practice alphabet recognition" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐻</text></svg>" />
+  <link rel="stylesheet" href="styles.scss" />
   </head>
-  <body>
-    <tl-info
-      data-heading="APP_NAME"
-      data-description="SHORT_DESCRIPTION"
-    ></tl-info>
-    <main>Hello world!</main>
-    <tl-footer></tl-footer>
-    <script src="main.ts" type="module"></script>
-    <script src="https://seanmcp.github.io/tl/wc.js"></script>
+
+<body>
+  <tl-info data-heading="Alphabear" data-description="A simple tool to practice alphabet recognition"></tl-info>
+  <main>
+    <h1>Alphabear</h1>
+    <form action="practice.html">
+      <fieldset data-id="letters">
+        <legend>Letters</legend>
+        <label><input type="checkbox" name="A" checked><span>A</span></label>
+        <label><input type="checkbox" name="B" checked><span>B</span></label>
+        <label><input type="checkbox" name="C" checked><span>C</span></label>
+        <label><input type="checkbox" name="D" checked><span>D</span></label>
+        <label><input type="checkbox" name="E" checked><span>E</span></label>
+        <label><input type="checkbox" name="F" checked><span>F</span></label>
+        <label><input type="checkbox" name="G" checked><span>G</span></label>
+        <label><input type="checkbox" name="H" checked><span>H</span></label>
+        <label><input type="checkbox" name="I" checked><span>I</span></label>
+        <label><input type="checkbox" name="J" checked><span>J</span></label>
+        <label><input type="checkbox" name="K" checked><span>K</span></label>
+        <label><input type="checkbox" name="L" checked><span>L</span></label>
+        <label><input type="checkbox" name="M" checked><span>M</span></label>
+        <label><input type="checkbox" name="N" checked><span>N</span></label>
+        <label><input type="checkbox" name="O" checked><span>O</span></label>
+        <label><input type="checkbox" name="P" checked><span>P</span></label>
+        <label><input type="checkbox" name="Q" checked><span>Q</span></label>
+        <label><input type="checkbox" name="R" checked><span>R</span></label>
+        <label><input type="checkbox" name="S" checked><span>S</span></label>
+        <label><input type="checkbox" name="T" checked><span>T</span></label>
+        <label><input type="checkbox" name="U" checked><span>U</span></label>
+        <label><input type="checkbox" name="V" checked><span>V</span></label>
+        <label><input type="checkbox" name="W" checked><span>W</span></label>
+        <label><input type="checkbox" name="X" checked><span>X</span></label>
+        <label><input type="checkbox" name="Y" checked><span>Y</span></label>
+        <label><input type="checkbox" name="Z" checked><span>Z</span></label>
+      </fieldset>
+      <fieldset data-id="case">
+        <legend>Letter style</legend>
+        <label>
+          <input type="checkbox" name="upper" checked>
+          <span class="upper">Uppercase</span>
+        </label>
+        <label>
+          <input type="checkbox" name="lower">
+          <span class="lower">Lowercase</span>
+        </label>
+      </fieldset>
+      <fieldset data-id="family">
+        <legend>Font family</legend>
+        <label>
+          <input type="checkbox" name="sans" checked />
+          <span class="sans">Sans</span>
+        </label>
+        <label>
+          <input type="checkbox" name="serif" />
+          <span class="serif">Serif</span>
+        </label>
+        <label>
+          <input type="checkbox" name="cursive" />
+          <span class="cursive">Cursive</span>
+        </label>
+      </fieldset>
+      <fieldset data-id="style">
+        <legend>Font style</legend>
+        <label>
+          <input type="checkbox" name="normal" checked />
+          <span class="normal">Normal</span>
+        </label>
+        <label>
+          <input type="checkbox" name="bold" />
+          <span class="bold">Bold</span>
+        </label>
+        <label>
+          <input type="checkbox" name="italic" />
+          <span class="italic">Italic</span>
+        </label>
+      </fieldset>
+      <button>Go</button>
+    </form>
+  </main>
+  <tl-footer></tl-footer>
+  <script src="index.ts" type="module"></script>
+  <script src="https://seanmcp.github.io/tl/wc.js"></script>
   </body>
+
 </html>
