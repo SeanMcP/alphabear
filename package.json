@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "parcel build src/*.html --dist-dir docs/ --public-url alphabear/",
+    "build": "parcel build src/*.html --dist-dir docs/ --public-url /alphabear",
     "prebuild": "rm -rf docs/*.*",
     "prestart": "rm -rf docs/*.*",
     "start": "parcel src/*.html --dist-dir docs/"
