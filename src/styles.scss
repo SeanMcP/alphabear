@@ -13,11 +13,23 @@ body {
   margin: 0;
 }
 
-main {
+body > * {
   max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
   width: calc(100% - 2rem);
+}
+
+header {
+  text-align: center;
+  
+  h1 {
+    display: inline;
+    font-size: 1rem;
+  }
+  p {
+    display: inline;
+  }
 }
 
 button {

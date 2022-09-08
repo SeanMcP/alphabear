@@ -1,3 +1,3 @@
 # Alphabear
 
-🐻 A simple tool to practice alphabet recognition
+🧸 A simple tool to practice alphabet recognition
